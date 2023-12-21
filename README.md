@@ -49,6 +49,8 @@ Set the preview domain in <strong>Storyblok</strong> to `https://localhost:3000/
 ```sh
 # to run in developer mode
 $ yarn dev # or npm run dev
+$ local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem #start ssl proxy server
+
 ```
 
 ```sh

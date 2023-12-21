@@ -7,16 +7,18 @@ import Page from "./Page";
 import Teaser from "./Teaser";
 import Grid from "./Grid";
 import Feature from "./Feature";
+import CenterImage from "./CenterImage";
 
 /** 3. Initialize it as usual */
 storyblokInit({
-  accessToken: "your-access-token",
+  accessToken: process.env.NEXT_PUBLIC_STORYBLOKS_KEY,
   use: [apiPlugin],
   components: {
     teaser: Teaser,
     page: Page,
     grid: Grid,
-    feature: Feature
+    feature: Feature,
+    "center-image": CenterImage
   },
 });
 
