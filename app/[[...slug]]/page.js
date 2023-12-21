@@ -2,6 +2,7 @@ import {
     getStoryblokApi,
 } from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
+import Navigation from "@/components/Navigation";
 
 export const dynamicParams = true;
 
@@ -13,6 +14,7 @@ export default async function Page({params}) {
 
     return (
         <div>
+            <Navigation></Navigation>
             <StoryblokStory story={data.story} />
         </div>
     );

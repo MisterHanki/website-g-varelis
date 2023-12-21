@@ -19,8 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <StoryblokProvider>
       <html lang="en">
-        <Navigation></Navigation>
-        <body>
+        <body className='text-white'>
             <Header />
             {children}
         </body>
